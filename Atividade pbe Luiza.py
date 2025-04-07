@@ -1,19 +1,18 @@
-#1
+
 num = int(input("Insira um número: \n"))
 if num % 2 == 0:
     print("Esse número é par")
 else:
     print("Esse número é impar")
 
-#2
+
 num = int(input("Insira um número: \n"))
 if num > 10:
     print("O número é maior que 10")
 else:
     print("O número é menor que 10")
 
-#3
-#Pergunte ao usuário a sua idade e informe se ele é maior de idade (18 anos ou mais) ou menor de idade.
+
 n = int(input("Digite sua idade: \n"))
 if n > 18:
     print("Você é maior de idade")
@@ -21,7 +20,7 @@ else:
     print("Você é menor de idade")
 
 
-#4
+
 idade = int(input("Insira sua idade: \n"))
 if idade < 16:
     print("Não tem voto")
@@ -31,8 +30,6 @@ else:
     print("Voto não obrigatório")
 
 
-#5
-#Pergunte ao usuário para inserir um número e diga se é positivo, negativo ou zero.
 n = int(input("Digite um número: \n"))
 if n > 0:
     print("O número é positivo")
@@ -42,7 +39,7 @@ else:
     print("O número é negativo")
 
 
-#6
+
 nota = int(input("Digite sua nota: \n"))
 
 if nota >= 9 and nota < 10:
@@ -64,7 +61,6 @@ else:
     print("Nota fora do intervalo")
 
 
-#7
 idade = int(input("Digite sua idade: \n"))
 if idade < 13:
     print("Você possui desconto")
@@ -74,7 +70,7 @@ elif idade >= 13 and idade < 60:
 else:
     print("Você possui desconto")
 
-#8
+
 a = float(input('Primeiro lado: '))
 b = float(input('Segundo  lado: '))
 c = float(input('Terceiro lado: '))
@@ -88,7 +84,7 @@ elif (a == b) or (a == c) or (b == c):
 else:
    print('Escaleno')
 
-#9
+
 valor = float(input("Digite o valor total da sua compra em R$: \n"))
 if valor < 100:
     desconto = 0.05
@@ -108,14 +104,18 @@ valor_final = valor - valor_desconto
 print(f"Desconto: R$ {valor_desconto:.2f}")
 print(f"Valor final a pagar: R$ {valor_final:.2f}")
 
-#10
+
+
+
 ano = int(input("Digite um ano: \n"))
 if (ano%4==0 and ano%100!=0) or (ano%400==0):
     print("É bissexto")
 else:
     print("Não é bissexto")
 
-#11
+
+
+
 peso = float(input("Insira seu peso em kg: \n"))
 altura = float(input("Insira sua altura em metros: "))
 imc = peso / (altura ** 2)
@@ -133,7 +133,8 @@ else:
     print("Obesidade")
 
 
-#12 Solicite ao usuário três números e diga se estão em ordem crescente, decrescente ou se são iguais.
+
+
 n1 = int(input("Digite o primeiro número: \n"))
 n2 = int(input("Digite o segundo número: \n"))
 n3 = int(input("Digite o terceiro número: \n"))
@@ -148,7 +149,8 @@ else:
     print("Os números são iguais")
 
 
-#13
+
+
 temperatura = float(input("Digite a temperatura: \n"))
 if temperatura < 10:
     print("Frio")
@@ -162,7 +164,8 @@ elif temperatura >= 25 and temperatura < 40:
 else:
     print("Muito quente")
 
-#14
+
+
 from datetime import datetime
 
 data_input = input("Digite uma data no formato dd/mm/aaaa: \n")
@@ -171,7 +174,8 @@ data_formatada = datetime.strptime(data_input, "%d/%m/%Y").strftime("%Y-%m-%d")
 
 print("A data formatada é:", data_formatada)
 
-#15
+#
+
 import re
 
 senha = input("Digite uma senha: \n")
@@ -189,7 +193,7 @@ elif not re.search(r"[^A-Za-z0-9]", senha):
 else:
     print("Senha criada com sucesso! Parabéns!")
 
-#16
+
 num = float(input("Digite um número: \n"))
 
 if num < 0:
@@ -200,7 +204,8 @@ else:
     raiz = num ** 0.5
     print(f"A raiz quadrada de {num} é {raiz:.2f}.")
 
-#17
+
+
 data = input("Escreva a data no seguinte formato (dd/mm/aaaa): \n")
 partes = data.split("/")
 dia = int(partes[0])
@@ -225,7 +230,7 @@ else:
     else:
         print(f"{ano:04d}-{mes:02d}-{dia:02d}")
 
-#18
+
 
 expressao = input("Digite uma expressão matemática: \n")
 
@@ -233,7 +238,7 @@ resultado = eval(expressao)
 
 print(f"O resultado da expressão é: {resultado}")
 
-#19
+
 
 import re
 
